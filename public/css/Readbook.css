@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1)
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-bottom: 3%;
+    background-color: #eee;
+}
+
+h3 {
+    color: #27ae60;
+    font-size: 1.6rem;
+}
+
+.whole-container {
+    display: flex;
+}
+
+.right-side {
+    position: relative;
+    width: 20rem;
+    min-height: 100vh;
+    background-color: white;
+    border-right: .1rem solid black;
+    box-shadow: 0 1px 1px 1px rgba(0 0 0 / .05);
+}
+
+.right-side .header-container {
+    padding: 0.6rem;
+    min-height: 3.5rem;
+    background-color: white;
+}
+
+.right-side .header-container .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right-side .header .toggle-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: all .3s ease;
+}
+
+.right-side .header .toggle-button i {
+    position: absolute;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+.right-side .header .toggle-button .fa-arrow-left {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.right-side .header .search-box {
+    position: relative;
+    border: .1rem solid black;
+    border-radius: 2.2rem;
+    width: 100%;
+    padding: 0.8rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.right-side .header .search-box i {
+    color: var(--light-color);
+    font-size: 1.1rem;
+    opacity: .6;
+}
+
+.right-side .header .search-box input {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.right-side .header .search-box input::placeholder {
+    color: #707579;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: .6;
+}
+
+.right-side .header.focus .search-box i {
+    color: var(--green);
+}
+
+/*.right-side .body-container {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #27ae60;
+}*/
+
+.right-side .body-container .chat-list {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    padding: auto;
+    border-bottom: 2px solid var(--light-color);
+}
+
+.right-side .body-container .chat-list .chat-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.right-side .chat-list .chat-box .chat-details {
+    flex-basis: 100%;
+}
+
+.right-side .chat-list .chat-box .chat-details {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.right-side .chat-box .chat-details .chat-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side .chat-box .chat-details .chat-title h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.right-side .chat-box .chat-details .chat-title span {
+    font-size: 0.6rem;
+}
+
+.right-side .chat-box .chat-details .chat-msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side .chat-box .chat-details .chat-msg p {
+    font-size: 1.1rem;
+    color: var(--light-color);
+}
+
+.right-side .body-container .chat-list .chat-box:hover {
+    background-color: hsla(207, 4%, 46%, .08);
+}
+
+.content {
+    /*position: relative;*/
+    width: 100%;
+    background: linear-gradient(132deg, #d5d88d 0%, #88b884 100%);
+}
+
+.pdf-viewer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#book-content {
+    height: 100vh; /* 100% of the viewport height */
+}

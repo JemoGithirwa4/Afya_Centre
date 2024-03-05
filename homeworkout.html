@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plan</title>
+    <link rel="stylesheet" href="css/child.css">
+    <style>
+        /* Hide the rest days initially */
+        .rest-day {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="sub-heading">Strength training Workout Plan</h3>
+
+    <!-- Day 1: Upper Body -->
+    <h1 class="heading" id="day-one-heading">Day 1: Upper Body</h1>
+    <table id="day-one-table">
+        <tr>
+            <th>Exercise</th>
+            <th>Sets x Reps</th>
+        </tr>
+        <tr>
+            <td>Pushups</td>
+            <td>3 x 10-15</td>
+        </tr>
+        <tr>
+            <td>Squats</td>
+            <td>3 x 15-20</td>
+        </tr>
+        <tr>
+            <td>Sit ups</td>
+            <td>3 x 20-30</td>
+        </tr>
+        <tr>
+            <td>Crunches</td>
+            <td>3 x 20-30</td>
+        </tr>
+        <tr>
+            <td>Jumping jacks</td>
+            <td>3 x 30-60 sec</td>
+        </tr>
+    </table>
+
+    <!-- Day 2: Lower Body -->
+    <h1 class="heading" id="day-two-heading" style="display: none;">Day 2: Lower Body</h1>
+    <table id="day-two-table" class="rest-day">
+        <tr>
+            <th>Exercise</th>
+            <th>Sets x Reps</th>
+        </tr>
+        <tr>
+            <td>Lunges</td>
+            <td>3 x 10-12 per leg</td>
+        </tr>
+        <tr>
+            <td>Plank</td>
+            <td>3 x 30-60 sec</td>
+        </tr>
+        <tr>
+            <td>Bird dog</td>
+            <td>3 x 10-15 per side</td>
+        </tr>
+        <tr>
+            <td>Superman holds</td>
+            <td>3 x 10-15</td>
+        </tr>
+        <tr>
+            <td>Russian twists</td>
+            <td>3 x 15-20</td>
+        </tr>
+    </table>
+
+    <!-- Day 3: Rest -->
+    <h1 class="heading" id="day-three-heading" style="display: none;">Day 3: Rest</h1>
+    <table id="day-three-table" class="rest-day">
+        <!-- ... Day Three table content ... -->
+    </table>
+
+    <!-- Day 4: Core -->
+    <h1 class="heading" id="day-four-heading" style="display: none;">Day 4: Core</h1>
+    <table id="day-four-table" class="rest-day">
+        <!-- ... Day Four table content ... -->
+    </table>
+
+    <!-- Day 5: Rest -->
+    <h1 class="heading" id="day-five-heading" style="display: none;">Day 5: Rest</h1>
+    <table id="day-five-table" class="rest-day">
+        <!-- ... Day Five table content ... -->
+    </table>
+
+    <!-- Day 6: Cardio -->
+    <h1 class="heading" id="day-six-heading" style="display: none;">Day 6: Cardio</h1>
+    <table id="day-six-table" class="rest-day">
+        <!-- ... Day Six table content ... -->
+    </table>
+
+    <!-- Day 7: Rest -->
+    <h1 class="heading" id="day-seven-heading" style="display: none;">Day 7: Rest</h1>
+    <table id="day-seven-table" class="rest-day">
+        <!-- ... Day Seven table content ... -->
+    </table>
+
+    <!-- Next button with JavaScript function -->
+    <a href="javascript:void(0);" onclick="toggleDays()" class="btn" id="next-btn">Next</a>
+
+    <script>
+        function toggleDays() {
+            var dayOneHeading = document.getElementById('day-one-heading');
+            var dayTwoHeading = document.getElementById('day-two-heading');
+            var dayThreeHeading = document.getElementById('day-three-heading');
+            var dayFourHeading = document.getElementById('day-four-heading');
+            var dayFiveHeading = document.getElementById('day-five-heading');
+            var daySixHeading = document.getElementById('day-six-heading');
+            var daySevenHeading = document.getElementById('day-seven-heading');
+            var dayOneTable = document.getElementById('day-one-table');
+            var dayTwoTable = document.getElementById('day-two-table');
+            var dayThreeTable = document.getElementById('day-three-table');
+            var dayFourTable = document.getElementById('day-four-table');
+            var dayFiveTable = document.getElementById('day-five-table');
+            var daySixTable = document.getElementById('day-six-table');
+            var daySevenTable = document.getElementById('day-seven-table');
+            var nextBtn = document.getElementById('next-btn');
+
+            // Toggle visibility of the seven days
+            if (dayOneHeading.style.display !== 'none') {
+                dayOneHeading.style.display = 'none';
+                dayOneTable.style.display = 'none';
+                dayTwoHeading.style.display = 'block';
+                dayTwoTable.style.display = 'table';
+                dayThreeHeading.style.display = 'none';
+                dayThreeTable.style.display = 'none';
+                dayFourHeading.style.display = 'none';
+                dayFourTable.style.display = 'none';
+                dayFiveHeading.style.display = 'none';
+                dayFiveTable.style.display = 'none';
+                daySixHeading.style.display = 'none';
+                daySixTable.style.display = 'none';
+                daySevenHeading.style.display = 'none';
+                daySevenTable.style.display = 'none';
+                nextBtn.innerHTML = 'Day 2';
+            } else if (dayTwoHeading.style.display !== 'none') {
+                dayOneHeading.style.display = 'none';
+                dayOneTable.style.display = 'none';
+                dayTwoHeading.style.display = 'none';
+                dayTwoTable.style.display = 'none';
+                dayThreeHeading.style.display = 'block';
+                dayThreeTable.style.display = 'table';
+                dayFourHeading.style.display = 'none';
+                dayFourTable.style.display = 'none';
+                dayFiveHeading.style.display = 'none';
+                dayFiveTable.style.display = 'none';
+                daySixHeading.style.display = 'none';
+                daySixTable.style.display = 'none';
+                daySevenHeading.style.display = 'none';
+                daySevenTable.style.display = 'none';
+                nextBtn.innerHTML = 'Day 3';
+            } else if (dayThreeHeading.style.display !== 'none') {
+                dayOneHeading.style.display = 'none';
+                dayOneTable.style.display = 'none';
+                dayTwoHeading.style.display = 'none';
+                dayTwoTable.style.display = 'none';
+                dayThreeHeading.style.display = 'none';
+                dayThreeTable.style.display = 'none';
+                dayFourHeading.style.display = 'block';
+                dayFourTable.style.display = 'table';
+                dayFiveHeading.style.display = 'none';
+                dayFiveTable.style.display = 'none';
+                daySixHeading.style.display = 'none';
+                daySixTable.style.display = 'none';
+                daySevenHeading.style.display = 'none';
+                daySevenTable.style.display = 'none';
+                nextBtn.innerHTML = 'Day 4';
+            } else if (dayFourHeading.style.display !== 'none') {
+                dayOneHeading.style.display = 'none';
+                dayOneTable.style.display = 'none';
+                dayTwoHeading.style.display = 'none';
+                dayTwoTable.style.display = 'none';
+                dayThreeHeading.style.display = 'none';
+                dayThreeTable.style.display = 'none';
+                dayFourHeading.style.display = 'none';
+                dayFourTable.style.display = 'none';
+                dayFiveHeading.style.display = 'block';
+                dayFiveTable.style.display = 'table';
+                daySixHeading.style.display = 'none';
+                daySixTable.style.display = 'none';
+                daySevenHeading.style.display = 'none';
+                daySevenTable.style.display = 'none';
+                nextBtn.innerHTML = 'Day 5';
+            } else if (dayFiveHeading.style.display !== 'none') {
+                dayOneHeading.style.display = 'none';
+                dayOneTable.style.display = 'none';
+                dayTwoHeading.style.display = 'none';
+                dayTwoTable.style.display = 'none';
+                dayThreeHeading.style.display = 'none';
+                dayThreeTable.style.display = 'none';
+                dayFourHeading.style.display = 'none';
+                dayFourTable.style.display = 'none';
+                dayFiveHeading.style.display = 'none';
+                dayFiveTable.style.display = 'none';
+                daySixHeading.style.display = 'block';
+                daySixTable.style.display = 'table';
+                daySevenHeading.style.display = 'none';
+                daySevenTable.style.display = 'none';
+                nextBtn.innerHTML = 'Day 6';
+            } else if (daySixHeading.style.display !== 'none') {
+                dayOneHeading.style.display = 'none';
+                dayOneTable.style.display = 'none';
+                dayTwoHeading.style.display = 'none';
+                dayTwoTable.style.display = 'none';
+                dayThreeHeading.style.display = 'none';
+                dayThreeTable.style.display = 'none';
+                dayFourHeading.style.display = 'none';
+                dayFourTable.style.display = 'none';
+                dayFiveHeading.style.display = 'none';
+                dayFiveTable.style.display = 'none';
+                daySixHeading.style.display = 'none';
+                daySixTable.style.display = 'none';
+                daySevenHeading.style.display = 'block';
+                daySevenTable.style.display = 'table';
+                nextBtn.innerHTML = 'Rest';
+            } else {
+                dayOneHeading.style.display = 'block';
+                dayOneTable.style.display = 'table';
+                dayTwoHeading.style.display = 'none';
+                dayTwoTable.style.display = 'none';
+                dayThreeHeading.style.display = 'none';
+                dayThreeTable.style.display = 'none';
+                dayFourHeading.style.display = 'none';
+                dayFourTable.style.display = 'none';
+                dayFiveHeading.style.display = 'none';
+                dayFiveTable.style.display = 'none';
+                daySixHeading.style.display = 'none';
+                daySixTable.style.display = 'none';
+                daySevenHeading.style.display = 'none';
+                daySevenTable.style.display = 'none';
+                nextBtn.innerHTML = 'Day 2';
+            }
+        }
+    </script>
+</body>
+</html>

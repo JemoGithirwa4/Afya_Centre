@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1)
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    /*margin: 0;*/
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /*text-transform: capitalize;*/
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+body {
+  background: #eee;
+}
+
+h1 {
+  text-align: center;
+  color: var(--green);
+  padding-top: 15px;
+  font-size: 3rem;
+}
+
+label {
+  color: var(--black);
+}
+
+input:focus {
+  border: .1rem solid var(--green);
+}
+  
+.signup-box {
+    width: 360px;
+    height: fit-content;
+    margin: auto;
+    background-color: white;
+    border-radius: 3%;
+    padding-bottom: 3%;
+}
+  
+.login-box {
+    width: 360px;
+    height: fit-content;
+    margin: auto;
+    border-radius: 3px;
+    background-color: white;
+    padding-bottom: 3%;
+}
+  
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+  
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+  
+form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+
+.btn {
+    margin-top: 3rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    /*border-radius: 5rem;*/
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background: var(--green);
+  letter-spacing: .1rem;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+  
+.para-2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 15px;
+    margin-top: -10px;
+}
+  
+.para-2 a {
+    color: #49c1a2;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Afya Centre</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link href="css/signup.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <!-- Specify the action attribute with the route to handle form submission -->
+        <form id="signupForm" action="/signup" method="post">
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="Enter first name" />
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Enter last name" />
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email address" />
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password" />
+            <label>Confirm Password</label>
+            <input type="password" name="confirmPassword" placeholder="Confirm password" />
+            <!-- Use type="submit" to submit the form -->
+            <input type="submit" value="Sign Up" class="btn">
+        </form>
+    </div>
+    <p class="para-2">
+        Already have an account? <a href="/">Login here</a>
+    </p>
+</body>
+</html>

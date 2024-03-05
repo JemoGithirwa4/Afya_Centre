@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lactating mothers plan</title>
+    <link rel="stylesheet" href="css/child.css">
+</head>
+<body>
+    <h3 class="sub-heading">Lactating mothers meal plan</h3>
+    <h1 class="heading" id="week-one-heading">Week one</h1>
+    <table id="week-one-table">
+        <tr>
+            <th>Day</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Whole-grain toast with avocado and poached eggs</td>
+            <td>Quinoa salad with grilled chicken and mixed vegetables</td>
+            <td>Baked salmon with asparagus and quinoa</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Greek yogurt with berries and honey</td>
+            <td>Vegetarian wrap with hummus and colorful veggies</td>
+            <td>Stir-fried tofu with broccoli and brown rice</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Oatmeal with almond butter and sliced bananas</td>
+            <td>Spinach and feta omelet with whole-grain toast</td>
+            <td>Grilled chicken with sweet potato wedges and green beans</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Smoothie with spinach, banana, and protein powder</td>
+            <td>Quinoa bowl with black beans, corn, and salsa</td>
+            <td>Salmon with quinoa and roasted Brussels sprouts</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Whole-grain pancakes with mixed berries</td>
+            <td>Caprese salad with whole-grain crackers</td>
+            <td>Veggie stir-fry with tofu and brown rice</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Scrambled eggs with sautéed spinach and whole-grain toast</td>
+            <td>Chickpea salad with cucumber, tomato, and feta</td>
+            <td>Grilled shrimp with quinoa and roasted asparagus</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>Whole-grain waffles with fruit and Greek yogurt</td>
+            <td>Vegetarian chili with beans and cornbread</td>
+            <td>Roast chicken with sweet potatoes and green beans</td>
+        </tr>
+    </table>
+      
+    <h1 class="heading" id="week-two-heading" style="display: none;">Week two</h1>
+    <table id="week-two-table" class="week-two">
+        <tr>
+            <th>Day</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Smoothie with kale, banana, and almond milk</td>
+            <td>Quinoa bowl with grilled vegetables and tofu</td>
+            <td>Baked cod with quinoa and steamed broccoli</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Greek yogurt parfait with granola and mixed berries</td>
+            <td>Chicken and vegetable stir-fry with brown rice</td>
+            <td>Vegetarian lasagna with whole-grain noodles</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Whole-grain toast with smoked salmon and cream cheese</td>
+            <td>Chickpea salad with cucumber, tomato, and feta</td>
+            <td>Grilled turkey burgers with sweet potato wedges</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Oatmeal with almond butter and sliced peaches</td>
+            <td>Spinach and feta omelet with whole-grain toast</td>
+            <td>Salmon and vegetable kebabs with quinoa</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Whole-grain pancakes with mixed berries</td>
+            <td>Cobb salad with grilled chicken, avocado, and tomatoes</td>
+            <td>Veggie and lentil curry with brown rice</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Scrambled eggs with sautéed spinach and whole-grain toast</td>
+            <td>Caprese sandwich with whole-grain bread</td>
+            <td>Grilled shrimp with quinoa and roasted asparagus</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>Whole-grain waffles with fruit and Greek yogurt</td>
+            <td>Quinoa salad with black beans, corn, and avocado</td>
+            <td>Roast chicken with sweet potatoes and green beans</td>
+        </tr>
+    </table>
+
+      <a href="javascript:void(0);" onclick="toggleWeeks()" class="btn" id="next-btn">Next</a>
+      
+      <script>
+          function toggleWeeks() {
+              var weekOneHeading = document.getElementById('week-one-heading');
+              var weekTwoHeading = document.getElementById('week-two-heading');
+              var weekOneTable = document.getElementById('week-one-table');
+              var weekTwoTable = document.getElementById('week-two-table');
+              var nextBtn = document.getElementById('next-btn');
+
+              // Toggle visibility of the two weeks
+              if (weekOneHeading.style.display !== 'none') {
+                  weekOneHeading.style.display = 'none';
+                  weekOneTable.style.display = 'none';
+                  weekTwoHeading.style.display = 'block';
+                  weekTwoTable.style.display = 'table';
+                  nextBtn.innerHTML = 'Previous';
+              } else {
+                  weekOneHeading.style.display = 'block';
+                  weekOneTable.style.display = 'table';
+                  weekTwoHeading.style.display = 'none';
+                  weekTwoTable.style.display = 'none';
+                  nextBtn.innerHTML = 'Next';
+              }
+          }
+      </script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afya Centre</title>
+
+    <!--Swiper-->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/456d64337e.js" crossorigin="anonymous"></script>
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <!--Header section-->
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-heart-pulse"></i></i>Afya.</a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#Meal">Meal plan</a>
+            <a href="#habits">Habit</a>
+            <a href="#gym">Workout plan</a>
+            <a href="#fasting">Fast</a>
+            <a href="#app">Community</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <!--<a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>-->
+        </div>
+
+    </header>
+
+    <!--Search form-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search" name="" id="search-box" />
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!--Home Section-->
+    <section class="home live" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Your health is your wealth. Invest in it wisely.</span>
+                        <h3>Article</h3>
+                        <p>Take a look on the importance of healthy living.</p>
+                        <a href="https://www.healthline.com/health/fitness-nutrition/healthy-lifestyle-benefits" class="btn">Read</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/Main-page.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Fatty liver</span>
+                        <h3>Article</h3>
+                        <p>Reasons for rise in cases of Fatty Liver Disease</p>
+                        <a href="https://my.clevelandclinic.org/health/diseases/15831-fatty-liver-disease" class="btn">Read</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/Liver.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Obesity Code</span>
+                        <h3>Article</h3>
+                        <p>Why do we get fat?</p>
+                        <a href="https://miracleinthegreen.com/blogs/news/jason-fung-the-code-of-obesity" class="btn">Read</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/Obese.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Sugar, salt, fat</span>
+                        <h3>Article</h3>
+                        <p>Who is the enemy?</p>
+                        <a href="#" class="btn">Read</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/Sugar.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="support">
+            <div class="support-image">
+                <img src="images/support.png" alt="img">
+            </div>
+            <div class="support-text">
+                <h2>Contact our support staff</h2>
+                <p>Do you need support and want to speak with one of our team members?</p>
+                <a href="#order" class="btn">Get support</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--Meal plan section-->
+    <section class="Meal" id="Meal">
+        <h3 class="sub-heading">Our Meal plans</h3>
+        <h1 class="heading">Available Meal Plans</h1>
+
+        <div class="box-container">
+            <div class="box">                
+                <img src="images/Children-meal.png" alt="img">
+                <h3>Children diet plan</h3>
+                <div><span>4 Weeks</span></div>
+                <a href="/get-plan?plan=children" class="btn mealbtn">Get plan</a>
+            </div>
+
+            <div class="box">             
+                <img src="images/lactating.png" alt="img">
+                <h3>Lactating mothers</h3>
+                <div><span>4 Weeks</span></div>
+                <a href="/get-plan?plan=lactating" class="btn">Get plan</a>
+            </div>
+
+            <div class="box">
+                <img src="images/bulk.png" alt="img">
+                <h3>Gain Muscle mass</h3>
+                <div><span>8 Weeks</span></div>
+                <a href="/get-plan?plan=muscle-gain" class="btn">Get plan</a>
+            </div>
+
+            <div class="box">
+                <img src="images/keto.png" alt="img">
+                <h3>Keto diet</h3>
+                <div><span>4 Weeks</span></div>
+                <a href="/get-plan?plan=keto" class="btn">Get plan</a>
+            </div>
+
+            <div class="box">
+                <img src="images/meat.png" alt="img">
+                <h3>Carnivore diet</h3>
+                <div><span>4 Weeks</span></div>
+                <a href="/get-plan?plan=carnivore" class="btn">Get plan</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Habit section-->
+    <section class="habits" id="habits">
+        <h3 class="sub-heading">Habits</h3>
+        <h1 class="heading">Success is the product of daily habits</h1>
+        <div class="habit-type">
+            <div class="book-reading">
+                <div class="habit-image">
+                    <img src="images/book.png" alt="">
+                </div>
+                <div class="habit-content">
+                    <h3>Read a book</h3>
+                    <p>Take a sneak peak at our available books.</p>
+                </div>
+                <a href="#" class="btn">Continue</a>               
+            </div>
+            <div class="book-reading">
+                <div class="habit-image">
+                    <img src="images/workout.png" alt="">
+                </div>
+                <div class="habit-content">
+                    <h3>Workout</h3>
+                    <p>Make some smoothy moving.</p>
+                </div>
+                <a href="#" class="btn">Continue</a>               
+            </div>
+            <div class="book-reading">
+                <div class="habit-image">
+                    <img src="images/medi.png" alt="">
+                </div>
+                <div class="habit-content">
+                    <h3>Meditate</h3>
+                    <p>Meditate to elevate.</p>
+                </div>
+                <a href="#" class="btn">Continue</a>               
+            </div>
+        </div>
+        <!--<div id="add-habit">
+            <input type="text" id="habit-input" placeholder="Enter a new habit">
+            <button class="btn">Add</button>
+        </div>-->
+    </section>
+
+    <!--Workout plan section-->
+    <section class="gym" id="gym">
+        <h3 class="sub-heading">Our workout plans</h3>
+        <h1 class="heading">Train like a beast, look like a beauty.</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/strength.png" alt="img">                    
+                </div>
+                <div class="content">
+                    <h3>Strength training</h3>
+                    <p>Get stronger. Gain lean muscle mass. Focuses on building and toning muscles.</p>
+                    <p id="duration">40 days</p>
+                    <a href="/get-plan?plan=strength" class="btn">Get plan</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/homeworkout.png" alt="img">                    
+                </div>
+                <div class="content">
+                    <h3>Home workout</h3>
+                    <p>Simple and versatile home workout plan that targets different muscle groups.</p>
+                    <p id="duration">40 days</p>
+                    <a href="/get-plan?plan=homeworkout" class="btn">Get plan</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/cardio.png" alt="img">                    
+                </div>
+                <div class="content">
+                    <h3>Cardiovascular plan</h3>
+                    <p>Aims to improve cardiovascular fitness and burn calories.</p>
+                    <p id="duration">4 weeks</p>
+                    <a href="/get-plan?plan=cardiovascular" class="btn">Get plan</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/hiit.png" alt="img">                    
+                </div>
+                <div class="content">
+                    <h3>High-Intensity Interval Training (HIIT) Plan</h3>
+                    <p>Efficient for burning calories and improving fitness in a shorter time.</p>
+                    <p id="duration">4 weeks</p>
+                    <a href="/get-plan?plan=hiit" class="btn">Get plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whole-container fasting" id="fasting">
+        <h1 class="heading2">Choose fast type</h1>
+        <div class="fast-type">
+            <a href="#" class="btn fast-hour" data-hours="16">16hr</a>
+            <a href="#" class="btn fast-hour" data-hours="24">24hr</a>
+            <a href="#" class="btn fast-hour" data-hours="48">48hr</a>
+            <a href="#" class="btn fast-hour" data-hours="72">72hr</a>
+        </div>
+        <div class="loading-container">
+            <div class="loading-text"><span>Time left :</span><p id="time-left"></p></div>
+            <svg class="loading-svg" width="200" height="200">
+                <circle class="outline-circle" cx="100" cy="100" r="90"></circle>
+                <circle class="loading-circle" cx="100" cy="100" r="90"></circle>
+            </svg>
+        </div>
+
+        <div class="time-display">
+            <div class="start-time">
+                <span>Start</span>
+                <p id="timer"></p>
+            </div>
+            <div class="stop-time">
+                <span>End</span>
+                <p id="endTimer">---------------</p>
+            </div>
+        </div>
+        <button class="btn" id="startButton">Start Fast</button>
+        <button class="btn" id="resetButton">Reset</button>
+    </section>
+
+    <!--Community chat section-->
+    <section class="app">
+        <div class="screen join-screen active-ch">
+            <div class="form">
+                <div class="img-container">
+                    <img src="images/afya.png" alt="img">
+                </div>
+                <h2>Join our vibrant Community</h2>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="form-input">
+                    <button class="btn" id="join-user">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">
+                    <i class="fa-solid fa-people-roof" style="color: #192a56;"></i>
+                    <span>Afya Centre Group Chat</span></div>
+                <button id="exit-chat"><i class="fa-solid fa-arrow-right-from-bracket fa-xl" style="color: #192a56;"></i></button>
+            </div>
+            <div class="messages">
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input" placeholder="Enter message">
+                <button id="send-message"><i class="fa-regular fa-paper-plane fa-xl" style="color: #25511f;"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!--Support section-->
+    <section class="order" id="order">
+        <h3 class="sub-heading">Contact Us</h3>
+        <h1 class="heading">Ask here</h1>
+
+        <form action="/support" method="post" id="myForm">
+            <div class="inputBox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name" name="name">
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Email address</span>
+                    <input type="email" placeholder="Enter email address" name="email">
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>your issue</span>
+                    <textarea name="issue" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="submit" class="btn">
+        </form>
+
+    </section>
+
+    <!--Footer section-->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">3rd Parklands Avenue, Limuru Road, Nairobi, Kenya</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">Meal plan</a>
+                <a href="#">Habit</a>
+                <a href="#">Workout plan</a>
+                <a href="#">Fast</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#">+254 (0) 111 011 888</a>
+                <a href="#">+254 (0) 730 011 888</a>
+                <a href="#">akuh.nairobi@aku.edu</a>
+                <a href="#">Nairobi, Kenya</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+            </div>
+        </div>
+
+        <div class="credit">copyright @ 2023 by <span>James Wainaina Githirwa</span></div>
+    </div>
+
+    <!--Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!--Socket IO-->
+    <script src="socket.io/socket.io.js"></script>
+
+    <!--Javascript file-->
+    <script src="javascript/index.js"></script>
+    
+</body>
+</html>

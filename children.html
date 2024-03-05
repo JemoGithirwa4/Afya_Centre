@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children plan</title>
+    <link rel="stylesheet" href="css/child.css">
+</head>
+<body>
+    <h3 class="sub-heading">Children meal plan</h3>
+    <h1 class="heading" id="week-one-heading">Week one</h1>
+    <table id="week-one-table">
+        <tr>
+          <th>Day</th>
+          <th>Breakfast</th>
+          <th>Lunch</th>
+          <th>Dinner</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Whole-wheat waffles with fruit and yogurt</td>
+          <td>Grilled cheese sandwich with tomato soup and a side of grapes</td>
+          <td>Baked chicken with roasted vegetables and brown rice</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Oatmeal with berries and nuts</td>
+          <td>Tuna salad sandwich on whole-wheat bread with carrot sticks and celery</td>
+          <td>Salmon with quinoa and steamed green beans</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Scrambled eggs with a side of toast and avocado</td>
+          <td>Leftover baked chicken with a side of fruit salad</td>
+          <td>Spaghetti with meatballs and a side of steamed broccoli</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Smoothie made with yogurt, fruit, and spinach</td>
+          <td>Peanut butter and jelly sandwich on whole-wheat bread with an apple</td>
+          <td>Veggie burgers on whole-wheat buns with sweet potato fries</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Pancakes with fruit and whipped cream</td>
+          <td>Pizza with whole-wheat crust, lean protein, and vegetables</td>
+          <td>Tacos with chicken, beef, or beans, and all the fixings</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>French toast with berries and maple syrup</td>
+          <td>Salad with grilled chicken or fish, vegetables, and a light vinaigrette</td>
+          <td>Homemade pizza night! Let the kids help you make their own personal pizzas with their favorite toppings.</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Eggs Benedict with fruit and a side of hash browns</td>
+          <td>Grilled cheese sandwich with tomato soup and a side of carrots</td>
+          <td>Roast beef with mashed potatoes and green beans</td>
+        </tr>
+      </table>
+
+      <h1 class="heading" id="week-two-heading" style="display: none;">Week two</h1>
+      <table id="week-two-table" class="week-two">
+        <tr>
+          <th>Day</th>
+          <th>Breakfast</th>
+          <th>Lunch</th>
+          <th>Dinner</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Cereal with milk and sliced bananas</td>
+          <td>Peanut butter and jelly sandwich with carrot sticks</td>
+          <td>Chicken nuggets with macaroni and cheese</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Blueberry pancakes with maple syrup</td>
+          <td>Cheese and turkey roll-ups with cherry tomatoes</td>
+          <td>Mini cheeseburgers with sweet potato fries</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Yogurt parfait with granola and mixed berries</td>
+          <td>Grilled cheese sandwich with apple slices</td>
+          <td>Spaghetti with tomato sauce and meatballs</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Scrambled eggs with toast fingers</td>
+          <td>Hummus and veggie wraps with cucumber slices</td>
+          <td>Fish sticks with mashed potatoes</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Waffle sticks with strawberries and whipped cream</td>
+          <td>Pita bread with ham and cheese, and a side of grapes</td>
+          <td>Homemade pizza with favorite toppings</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Fruit smoothie with yogurt</td>
+          <td>Chicken and cheese quesadillas with salsa</td>
+          <td>Grilled chicken tenders with rice and peas</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Bagel with cream cheese and fruit slices</td>
+          <td>Tomato soup with grilled cheese croutons</td>
+          <td>Beef and vegetable stir-fry with rice</td>
+        </tr>
+      </table>
+
+      <a href="javascript:void(0);" onclick="toggleWeeks()" class="btn" id="next-btn">Next</a>
+      
+      <script>
+          function toggleWeeks() {
+              var weekOneHeading = document.getElementById('week-one-heading');
+              var weekTwoHeading = document.getElementById('week-two-heading');
+              var weekOneTable = document.getElementById('week-one-table');
+              var weekTwoTable = document.getElementById('week-two-table');
+              var nextBtn = document.getElementById('next-btn');
+
+              // Toggle visibility of the two weeks
+              if (weekOneHeading.style.display !== 'none') {
+                  weekOneHeading.style.display = 'none';
+                  weekOneTable.style.display = 'none';
+                  weekTwoHeading.style.display = 'block';
+                  weekTwoTable.style.display = 'table';
+                  nextBtn.innerHTML = 'Previous';
+              } else {
+                  weekOneHeading.style.display = 'block';
+                  weekOneTable.style.display = 'table';
+                  weekTwoHeading.style.display = 'none';
+                  weekTwoTable.style.display = 'none';
+                  nextBtn.innerHTML = 'Next';
+              }
+          }
+      </script>
+</body>
+</html>

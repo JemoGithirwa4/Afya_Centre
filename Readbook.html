@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="css/Readbook.css">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/456d64337e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="whole-container">
+        <aside class="right-side">
+            <div class="header-container">
+                <div class="header">
+                    <div class="toggle-button">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="body-container">
+                <div class="chat-list" onclick="showBook('/Obesitycode.PDF')">
+                    <div class="chat-box" id="Msg">
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Obesity Code</h3>
+                                <span>316 pages</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>Dr. Jason Fung</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="chat-list" onclick="showBook('/navy-seal.pdf')">
+                    <div class="chat-box" id="Msg">
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Navy seal fitness</h3>
+                                <span>306 pages</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>Frank K. Butler</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-list" onclick="showBook('/Atomichabits.pdf')">
+                    <div class="chat-box" id="Msg">
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Atomic Habits</h3>
+                                <span>285 pages</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>James Clear</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="content">
+            <div class="container" id="book-content">
+            </div>
+        </section>
+    </div>
+    <script>
+        function showBook(pdfPath) {
+            console.log('PDF Path:', pdfPath);
+            var bookContent = document.getElementById('book-content');
+            // Embed PDF viewer using <iframe>
+            bookContent.innerHTML = `<iframe class="pdf-viewer" src="${pdfPath}"></iframe>`;
+        }
+    </script>
+    
+</body>
+</html>
